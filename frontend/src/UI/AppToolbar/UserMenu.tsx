@@ -22,7 +22,7 @@ const UserMenu: React.FC<Props> = ({user}) => {
                 alignItems='center'
                 fontSize='15px'
             >
-                Hello, <b>{user.username}</b>! <Button component={NavLink} to='/posts/new' color='inherit' sx={{textTransform: "none", padding: '3px 6px 5px 5px', textDecoration: 'underline'}}>Add new post</Button> or <Button sx={{textTransform: "none", padding: '3px 6px 5px 5px', textDecoration: 'underline'}} onClick={handleLogout} color='inherit'>Logout</Button>
+                Hello, <b>{user.displayName}</b>! <Button component={NavLink} to='/products/new' color='inherit' sx={{textTransform: "none", padding: '3px 6px 5px 5px', textDecoration: 'underline'}}>Add new item</Button> or <Button sx={{textTransform: "none", padding: '3px 6px 5px 5px', textDecoration: 'underline'}} onClick={handleLogout} color='inherit'>Logout</Button>
             </Grid>
     );
 };
