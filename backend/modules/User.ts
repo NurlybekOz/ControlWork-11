@@ -34,7 +34,7 @@ const UserSchema = new mongoose.Schema<
                 const user: HydratedDocument<UserFields> | null = await User.findOne({username: value});
                 return !user;
             },
-            message: "This is username is already taken"
+            message: "This username is already taken"
         }
     },
     password: {
